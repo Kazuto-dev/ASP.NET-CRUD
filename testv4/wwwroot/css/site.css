@@ -1,0 +1,39 @@
+html {
+  font-size: 14px;
+  font-family: poppins;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+        font-family: poppins;
+    }
+}
+
+html {
+    position: relative;
+    min-height: 100%;
+    font-family: poppins;
+}
+
+body {
+    margin-bottom: 60px;
+    font-family: poppins;
+}
+
+
+.classes{
+    padding-top: 15rem;
+}
+
+.classless{
+    padding-top: 10rem;
+}
+
+.divider:after,
+.divider:before {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: #eee;
+}

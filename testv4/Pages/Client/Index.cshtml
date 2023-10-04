@@ -1,0 +1,33 @@
+﻿@page
+@model testv4.Pages.Client.IndexModel
+@{
+
+}
+
+<br />
+<h1>Simple Form</h1>
+<a class="btn btn-primary btn-sm" href="/Client/Registration">Add</a> 
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Email</th>
+            <th>Password</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.client)
+        {
+            <tr>
+                <td>@item.id</td>
+                <td>@item.email</td>
+                <td>@item.password</td>
+                <td>
+                    <a class="btn btn-primary btn-sm" href="/Client/Edit?id=@item.id">Edit</a>
+                    <a class="btn btn-primary btn-sm" href="/Client/Delete?id=@item.id">Delete</a>                  
+                </td>
+
+            </tr>     
+        }
+    </tbody>
+</table>
